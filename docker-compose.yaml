@@ -7,3 +7,20 @@ services:
       - "3000:3000"
     volumes:
       - .:/home/node/app
+  
+  # esxite um imagem padrão do mongo mas a da bitnami possui a configuração
+  # de réplicas do MongoDB e o Prisma ORM precisa da configuração de réplicas para funcionar.
+  db:
+    image: bitnami/mongodb:5.0.17
+    volumes:
+      - mongodb_data:/bitnami/mongodb
+    environment:
+      MONGODB_ROOT_PASSWORD: root
+      MONGODB_REPLICA_SET_MODE: primary
+      MONGODB_REPLICA_SET_KEY: 123456
+      MONGODB_DATABASE: nest
+
+# esse volume mantém os dados se o container morrer
+volumes:
+  mongodb_data:
+    driver: local
