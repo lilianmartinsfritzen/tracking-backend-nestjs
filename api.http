@@ -19,4 +19,7 @@ Content-Type: application/json
 ### Requisições referentes ao mapa
 
 ### Pegar o place_id
-GET http://localhost:3000/places?text=av governador valadares, betim, 1030
+GET http://localhost:3000/places?text=aeroporto regional hugo cantergiani, caxias do sul
+
+### Pegar direções entre 2 pontos
+GET http://localhost:3000/directions?originId=ChIJ55QOAlSjHpURKMMYZKgJpzg&destinationId=ChIJnzWK_Fp3GZURj1PdYEehmck
