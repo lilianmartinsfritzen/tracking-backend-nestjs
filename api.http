@@ -12,8 +12,8 @@ Content-Type: application/json
 
 {
   "name": "route test 1",
-  "source_id": "1",
-  "destination_id": "2"
+  "source_id": "ChIJ55QOAlSjHpURKMMYZKgJpzg",
+  "destination_id": "ChIJnzWK_Fp3GZURj1PdYEehmck"
 }
 
 ### Requisições referentes ao mapa
