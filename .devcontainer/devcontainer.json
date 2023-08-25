@@ -25,7 +25,11 @@
   // Configure tool-specific properties.
   "customizations": {
     "vscode": {
-      "extensions": ["prisma.prisma"]
+      "extensions": [
+        "prisma.prisma",
+        "humao.rest-client",
+        "dbaeumer.vscode-eslint"
+      ]
     }
   }
 
